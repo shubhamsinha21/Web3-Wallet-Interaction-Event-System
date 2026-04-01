@@ -1,26 +1,90 @@
-## Web3 Event-Driven Backend System
+# 🚀 Web3 Event → Backend System
 
-### Overview
-This project demonstrates how on-chain smart contract events can trigger backend systems, simulating real-world Web3 application architecture.
+> From blockchain events to backend actions
 
-### Architecture
-Frontend (React) → Smart Contract → Event Emission → Backend Listener (Node.js)
+---
 
-### Features
-- Wallet connection via MetaMask
-- Smart contract interaction using ethers.js
+## 🧠 Overview
+
+This project demonstrates how on-chain smart contract events can trigger backend workflows, simulating real-world Web3 system design.
+
+Instead of stopping at contract interaction, this system connects:
+- Frontend user action
+- Smart contract execution
 - Event emission on blockchain
-- Backend listener capturing events using polling (queryFilter)
-- Simulated backend automation trigger
+- Backend event detection and processing
 
-### Key Learning
-Instead of relying on unstable RPC filters, I implemented block-based polling to reliably capture events. This approach aligns more closely with production-grade Web3 backend systems.
+---
 
-### Tech Stack
+## ⚙️ Architecture
+
+Frontend (React)  
+⬇  
+Smart Contract (Solidity)  
+⬇  
+Event Emission (Sepolia)  
+⬇  
+Backend Listener (Node.js + ethers.js)  
+⬇  
+Backend Workflow Trigger
+
+---
+
+## ✨ Features
+
+- 🔗 Wallet connection via MetaMask
+- ⛓️ Smart contract interaction using ethers.js
+- 📡 Event emission on blockchain
+- 🔄 Backend listener using block polling (`queryFilter`)
+- ⚙️ Event-driven backend workflow simulation
+- 🌐 Sepolia testnet deployment
+
+---
+
+## 🧩 Key Engineering Insight
+
+Most Web3 demos rely on RPC filters for event listening, which are unreliable in real-world scenarios.
+
+This project uses:
+
+> **Block-based polling with `queryFilter`**
+
+to ensure:
+- Reliable event detection
+- No dependency on unstable RPC filters
+- Production-aligned backend design
+
+---
+
+## 🛠 Tech Stack
+
 - Solidity
 - React.js
 - Node.js
-- Ethers.js
+- ethers.js
+- MetaMask
+- Sepolia Testnet
 
-### Why this matters
-Most Web3 demos stop at contract interaction. This project explores how blockchain events integrate with backend systems, which is critical for real-world applications like notifications, automation, and analytics.
+---
+
+## 📸 Screenshots
+
+### 🖥 Frontend UI
+![UI Screenshot](./screenshots/ui.png)
+
+### ⚙️ Backend Event Detection
+![Backend Screenshot](./screenshots/backend.png)
+
+---
+
+## 🚀 How It Works
+
+1. User enters a message in UI  
+2. Transaction sent via MetaMask  
+3. Smart contract logs event  
+4. Backend polls blockchain  
+5. Event detected → backend workflow triggered  
+
+---
+
+## 📂 Project Structure
