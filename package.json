@@ -20,5 +20,8 @@
   "homepage": "https://github.com/shubhamsinha21/Web3-Wallet-Interaction-Event-System#readme",
   "devDependencies": {
     "hardhat": "^3.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
   }
 }
